@@ -28,8 +28,9 @@ console.info(
 );
 
 await git.clone(
-  'git@github.com:material-extensions/vscode-material-icon-theme.git',
+  'https://github.com/material-extensions/vscode-material-icon-theme.git',
   vsCodeExtDirPath,
+  { '--depth': 1 }
 );
 
 console.info('Running `bun install`');
